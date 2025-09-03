@@ -2,6 +2,7 @@ import { capitalize } from "./testing";
 import { reverseString } from "./testing";
 import { calculator } from "./testing";
 import { caeserCipher } from "./testing";
+import { analyzeArray } from "./testing";
 
 test('capitalize the string "Amongus" to "AMONGUS"', () => {
   expect(capitalize("Amongus")).toBe("AMONGUS");
