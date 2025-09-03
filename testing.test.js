@@ -23,11 +23,11 @@ test("2 added to 3 should be 5", () => {
 });
 
 test("8 subtracted from 20 should be 12", () => {
-  expect(calculator.add(20, 8)).toBe(12);
+  expect(calculator.subtract(20, 8)).toBe(12);
 });
 
 test("63 divided by 9 should be 7", () => {
-  expect(calculator.add(63, 9)).toBe(7);
+  expect(calculator.divide(63, 9)).toBe(7);
 });
 
 test("5 multiplied by 8 shuold be 40", () => {
