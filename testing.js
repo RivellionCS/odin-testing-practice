@@ -2,6 +2,7 @@ export { capitalize };
 export { reverseString };
 export { calculator };
 export { caeserCipher };
+export { analyzeArray };
 
 function capitalize(string) {
   return string.toUpperCase();
@@ -61,4 +62,46 @@ function caeserCipher(string, shiftFactor) {
   }
 
   return finalString;
+}
+
+function analyzeArray(array) {
+  const arrayLength = array.length;
+  const arrayMax = () => {
+    let maximum = null;
+    for (let i = 0; i < arrayLength; i++) {
+      if (maximum === null) {
+        maximum = array[i];
+      } else if (maximum < array[i]) {
+        maximum = array[i];
+      }
+    }
+    return maximum;
+  };
+  const arrayMinimum = () => {
+    let minimum = null;
+    for (let i = 0; i < arrayLength; i++) {
+      if (minimum === null) {
+        minimum = array[i];
+      } else if (minimum > array[i]) {
+        minimum = array[i];
+      }
+    }
+    return minimum;
+  };
+  const arrayAverage = () => {
+    let total = 0;
+    for (let i = 0; i < arrayLength; i++) {
+      total += array[i];
+    }
+    return total / arrayLength;
+  };
+
+  const arrayObject = {
+    average: arrayAverage(),
+    min: arrayMinimum(),
+    max: arrayMax(),
+    length: arrayLength,
+  };
+
+  return arrayObject;
 }
