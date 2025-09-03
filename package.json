@@ -1,0 +1,25 @@
+{
+  "name": "odin-testing-practice",
+  "version": "1.0.0",
+  "description": "Project to understand jest better",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RivellionCS/odin-testing-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RivellionCS/odin-testing-practice/issues"
+  },
+  "homepage": "https://github.com/RivellionCS/odin-testing-practice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "babel-jest": "^30.1.2",
+    "jest": "^30.1.3"
+  }
+}
