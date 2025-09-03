@@ -1,6 +1,7 @@
 import { capitalize } from "./testing";
 import { reverseString } from "./testing";
 import { calculator } from "./testing";
+import { caeserCipher } from "./testing";
 
 test('capitalize the string "Amongus" to "AMONGUS"', () => {
   expect(capitalize("Amongus")).toBe("AMONGUS");
@@ -32,4 +33,16 @@ test("63 divided by 9 should be 7", () => {
 
 test("5 multiplied by 8 shuold be 40", () => {
   expect(calculator.multiply(5, 8)).toBe(40);
+});
+
+test('caeserCipher("xyz", 3) should return "abc"', () => {
+  expect(caeserCipher("xyz", 3)).toBe("abc");
+});
+
+test('caeserCipher("HeLLo", 3) should return "KhOOr"', () => {
+  expect(caeserCipher("HeLLo", 3)).toBe("KhOOr");
+});
+
+test('caeserCipher("Hello, World!", 3) should return "Khoor, Zruog!"', () => {
+  expect(caeserCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });
